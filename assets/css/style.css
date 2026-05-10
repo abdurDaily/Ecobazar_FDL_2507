@@ -89,3 +89,97 @@ body {
   color: var(--gray-scale-gray--300);
 }
 /* =============== HEADER END ======================*/
+
+/* =============== NAVIGATION START ====================*/
+
+#nav form input {
+  padding: 12px 44px;
+  outline: none;
+  border: 1px solid var(--gray-scale-gray--200);
+  border-radius: 6px 0 0 6px;
+  width: 400px !important;
+}
+#nav form {
+  position: relative;
+  display: flex;
+}
+#nav form span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 0;
+  color: #000000;
+}
+#nav form button {
+  background-color: var(--branding-success);
+  color: var(--gray-scale-white);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 0 6px 6px 0;
+  width: 100px !important;
+}
+#nav .search_box {
+  /* background-color: var(--gray-scale-gray--100); */
+  display: flex;
+  justify-content: center;
+}
+#nav .cart_parent {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+#nav .cart_child_parent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#nav .cart_parent span {
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+}
+#nav .second span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 120%;
+  color: var(--gray-scale-gray--700);
+}
+#nav .second p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--gray-scale-gray--900);
+}
+#nav .cart_child_parent .cart {
+  position: relative;
+}
+#nav .cart_child_parent small {
+  background-color: #00b207;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -1px;
+  right: -3px;
+}
+#nav .first{
+  position: relative;
+}
+#nav .first::after{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #00260354;
+  right: -10px;
+}
+/* =============== NAVIGATION END ======================*/
