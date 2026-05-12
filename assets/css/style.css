@@ -30,27 +30,38 @@
   --third-family: "Dancing Script", sans-serif;
 }
 
+iconify-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
 body {
   font-family: var(--font-family);
 }
+
 /* =============== HEADER START ====================*/
 #header {
   background-color: var(--gray-scale-gray--800);
   color: var(--gray-scale-white);
   padding: 12px 0;
 }
+
 #header span:first-child {
   line-height: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
+
 #header .location,
 #header .sign_in {
   display: inline-flex;
   width: 50%;
   gap: 8px;
 }
+
 #header span:last-child {
   display: inline-flex;
   font-family: var(--font-family);
@@ -59,12 +70,14 @@ body {
   line-height: 2;
   color: var(--gray-scale-gray--300);
 }
+
 #header .sign_in {
   display: flex;
   gap: 40px;
   justify-content: end;
   font-size: 12px;
 }
+
 #header .sign_in select {
   background-color: transparent;
   color: var(--gray-scale-white);
@@ -72,38 +85,45 @@ body {
   outline: none;
   color: var(--gray-scale-gray--300);
 }
+
 #header .sign_in select option {
   background-color: var(--gray-scale-gray--800);
   color: var(--gray-scale-white);
 }
+
 #header .sign_in div:first-child {
   display: flex;
   gap: 5px;
 }
+
 #header .sign_in div:last-child {
   line-height: 2;
 }
+
 #header .sign_in div:last-child a {
   color: var(--gray-scale-white);
   text-decoration: none;
   color: var(--gray-scale-gray--300);
 }
+
 /* =============== HEADER END ======================*/
 
-/* =============== NAVIGATION START ====================*/
+/* =============== nav_headerIGATION START ====================*/
 
-#nav form input {
+#nav_header form input {
   padding: 12px 44px;
   outline: none;
   border: 1px solid var(--gray-scale-gray--200);
   border-radius: 6px 0 0 6px;
   width: 400px !important;
 }
-#nav form {
+
+#nav_header form {
   position: relative;
   display: flex;
 }
-#nav form span {
+
+#nav_header form span {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -111,7 +131,8 @@ body {
   line-height: 0;
   color: #000000;
 }
-#nav form button {
+
+#nav_header form button {
   background-color: var(--branding-success);
   color: var(--gray-scale-white);
   border: none;
@@ -119,45 +140,53 @@ body {
   border-radius: 0 6px 6px 0;
   width: 100px !important;
 }
-#nav .search_box {
+
+#nav_header .search_box {
   /* background-color: var(--gray-scale-gray--100); */
   display: flex;
   justify-content: center;
 }
-#nav .cart_parent {
+
+#nav_header .cart_parent {
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 20px;
 }
-#nav .cart_child_parent {
+
+#nav_header .cart_child_parent {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-#nav .cart_parent span {
+
+#nav_header .cart_parent span {
   line-height: 0;
   display: inline-flex;
   align-items: center;
 }
-#nav .second span {
+
+#nav_header .second span {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 11px;
   line-height: 120%;
   color: var(--gray-scale-gray--700);
 }
-#nav .second p {
+
+#nav_header .second p {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
   color: var(--gray-scale-gray--900);
 }
-#nav .cart_child_parent .cart {
+
+#nav_header .cart_child_parent .cart {
   position: relative;
 }
-#nav .cart_child_parent small {
+
+#nav_header .cart_child_parent small {
   background-color: #00b207;
   height: 18px;
   width: 18px;
@@ -171,10 +200,12 @@ body {
   top: -1px;
   right: -3px;
 }
-#nav .first{
+
+#nav_header .first {
   position: relative;
 }
-#nav .first::after{
+
+#nav_header .first::after {
   content: "";
   position: absolute;
   width: 1px;
@@ -182,4 +213,81 @@ body {
   background: #00260354;
   right: -10px;
 }
-/* =============== NAVIGATION END ======================*/
+
+nav {
+  background: var(--gray-scale-gray--50) !important;
+  padding: 0 !important;
+}
+
+nav .nav_dropdown {
+  background-color: var(--branding-success) !important;
+  border-radius: 0;
+  border: none;
+  padding: 14px 24px;
+  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav .parent_dropdown {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray-scale-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+
+
+.parent_dropdown.dropdown-toggle::after {
+  display: none;
+}
+
+nav .parent_dropdown_list {
+  width: 100%;
+  border-radius: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+nav .parent_dropdown_list li {
+  padding: 3px 0;
+}
+
+nav .middle_menu {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+}
+
+nav .middle_menu li:first-child a {
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-family);
+}
+nav .middle_menu li a{
+  color: var(--gray-scale-gray--500);
+
+}
+nav .middle_menu li:first-child a:focus {
+  color: var(--gray-scale-gray--500);
+}
+nav .nav_phone{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+nav .nav_phone a{
+  text-decoration: none;
+  color: #000000;
+}
+/* =============== nav_headerIGATION END ======================*/

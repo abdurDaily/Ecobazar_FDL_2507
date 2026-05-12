@@ -60,7 +60,7 @@
 
 
     <!-- =============== NAVIGATION START ==================== -->
-    <nav class=" py-3" id="nav">
+    <div class=" py-3" id="nav_header">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3">
@@ -99,36 +99,133 @@
                 </div>
             </div>
 
-            <span class="d-lg-none mobile_menu" data-bs-toggle="offcanvas" data-bs-target="#mobile" aria-controls="mobile"><iconify-icon icon="gg:menu-right" width="24"
-                    height="24"></iconify-icon></span>
+            <span class="d-lg-none mobile_menu" data-bs-toggle="offcanvas" data-bs-target="#mobile"
+                aria-controls="mobile"><iconify-icon icon="gg:menu-right" width="24" height="24"></iconify-icon></span>
         </div>
-    </nav>
+    </div>
 
     <!-- offcanvus -->
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile" aria-labelledby="mobileLabel">
+    <div class="offcanvas offcanvas-start mobile_offcanvas" tabindex="-1" id="mobile" aria-labelledby="mobileLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="mobileLabel">Offcanvas</h5>
+            <img src="./assets/images/logo.png" alt="">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
+        <div class="offcanvas-body py-0">
+            <ul class="nav nav-tabs mobile_sidebar" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Menu</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane"
+                        aria-selected="false">Categories</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <ul class="menu_list">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+
+                    <ul class="menu_list">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
+        </div>
+    </div>
+    <!-- offcanvus end -->
+
+
+    <!-- nav  -->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+        <div class="container">
+            <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle parent_dropdown nav_dropdown" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="dropdown_menu_icon"><iconify-icon icon="boxicons:menu-filled" width="24" height="24"
+                            style="color: #fff"></iconify-icon></span>
+                    All Categories
+
+                    <span><iconify-icon icon="iconoir:nav-arrow-down" width="24" height="24"
+                            style="color: #ffffff"></iconify-icon></span>
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu parent_dropdown_list">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto  mb-lg-0 middle_menu">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <div class="nav_phone">
+                    <span><iconify-icon icon="line-md:phone-call-loop" width="24" height="24"
+                            style="color: #000"></iconify-icon></span>
+                    <a href="tel:(219) 555-0114">(219) 555-0114</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- offcanvus end -->
+    </nav>
+    <!-- nav end -->
+
+
+
+
     <!-- =============== NAVIGATION END ======================== -->
     <!-- jquery -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
