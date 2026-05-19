@@ -272,32 +272,37 @@ nav .middle_menu li:first-child a {
   border: none;
   font-family: var(--font-family);
 }
-nav .middle_menu li a{
+
+nav .middle_menu li a {
   color: var(--gray-scale-gray--500);
 
 }
+
 nav .middle_menu li:first-child a:focus {
   color: var(--gray-scale-gray--500);
 }
-nav .nav_phone{
+
+nav .nav_phone {
   display: flex;
   gap: 8px;
   align-items: center;
   justify-content: center;
   line-height: 0;
 }
-nav .nav_phone a{
+
+nav .nav_phone a {
   text-decoration: none;
   color: #000000;
 }
+
 /* =============== nav_headerIGATION END ======================*/
 
 /* =================== SEARCH START ============== */
-#search-bar{
+#search-bar {
   backdrop-filter: blur(6px);
   height: 100vh;
   position: fixed;
-  top: 126px ;
+  top: 126px;
   left: 0;
   width: 100%;
   overflow-y: scroll;
@@ -305,7 +310,8 @@ nav .nav_phone a{
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-#search-bar.search_active{
+
+#search-bar.search_active {
   visibility: visible;
   opacity: 1;
 }
@@ -313,18 +319,21 @@ nav .nav_phone a{
 #search-bar a {
   text-decoration: none;
 }
-#search-bar .search_card{
+
+#search-bar .search_card {
   padding: 12px 24px;
   background-color: white;
   box-shadow: rgba(11, 201, 46, 0.168) 0px 3px 8px, rgba(11, 201, 46, 0.168) 0px -3px 8px;
   border-radius: 5px;
 
 }
-#search-bar .search_card img{
+
+#search-bar .search_card img {
   width: 100%;
   object-fit: cover;
 }
-#search-bar .search_card h4{
+
+#search-bar .search_card h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
@@ -333,17 +342,100 @@ nav .nav_phone a{
   text-transform: capitalize;
   color: var(--branding-success);
 }
-#search-bar .search_card p{
+
+#search-bar .search_card p {
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   color: var(--gray-scale-gray--700);
   margin-bottom: 5px;
 }
-#search-bar .search_card b{
+
+#search-bar .search_card b {
   font-weight: 600;
   font-size: 14px;
   line-height: 120%;
   color: var(--gray-scale-gray--900);
 }
+
 /* =================== SEARCH END ============== */
+
+
+/* =============== CSS HERO START ====================*/
+#hero .hero_content p:first-child {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--branding-success);
+
+}
+
+#hero .hero_content p:last-child {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-500);
+}
+
+#hero .hero_content h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  color: var(--gren-gray-scale-900);
+}
+
+#hero .hero_content a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  background-color: var(--branding-success);
+  padding: 14px 24px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 43px;
+  line-height: 0;
+}
+
+#hero .slick-dots{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 5px;
+}
+#hero .slick-dots button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--gray-scale-gray--300);
+  border: none;
+  color: transparent;
+}
+#hero .slick-active button{
+  width: 20px;
+  border-radius: 12px;
+  background-color: var(--branding-success);
+}
+#hero .hero_prev{
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 55;
+  cursor: pointer;
+  outline: 1px solid var(--gray-scale-gray--300);
+  color: #00b207;
+}
+/* =============== CSS HERO END ======================*/
