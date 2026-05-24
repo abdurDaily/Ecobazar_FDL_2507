@@ -403,14 +403,15 @@ nav .nav_phone a {
   line-height: 0;
 }
 
-#hero .slick-dots{
+#hero .slick-dots {
   width: 100%;
   display: flex;
   justify-content: center;
   list-style-type: none;
   gap: 5px;
 }
-#hero .slick-dots button{
+
+#hero .slick-dots button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -418,12 +419,14 @@ nav .nav_phone a {
   border: none;
   color: transparent;
 }
-#hero .slick-active button{
+
+#hero .slick-active button {
   width: 20px;
   border-radius: 12px;
   background-color: var(--branding-success);
 }
-#hero .hero_prev{
+
+#hero .hero_prev {
   background-color: transparent;
   border: none;
   width: 40px;
@@ -438,4 +441,132 @@ nav .nav_phone a {
   outline: 1px solid var(--gray-scale-gray--300);
   color: #00b207;
 }
+
 /* =============== CSS HERO END ======================*/
+
+
+#category {
+  height: 100vh;
+}
+
+#category h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-900);
+}
+
+#category .btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+  gap: 48px;
+}
+
+#category .btns button {
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--500);
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#category .btns button::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 20%;
+  background-color: var(--gren-gray-scale-200);
+  right: -25px;
+}
+
+#category .btns button:last-child::after {
+  display: none;
+}
+
+#category .btns button.active {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--branding-success);
+  border-bottom: 2px solid var(--branding-success);
+}
+
+#category .filter {
+  border: 1px solid var(--gren-gray-scale-100);
+  padding: 20px;
+  width: 25%;
+}
+
+#category .filter:hover {
+  border: 1px solid var(--branding-success-dark);
+  box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+}
+
+#category .category_content {
+  flex-wrap: wrap;
+}
+#category .category_content h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-700);
+  margin-bottom: 0;
+}
+
+#category .category_content .sub_content span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-900);
+}
+
+#category .category_content .sub_content del {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: var(--gren-gray-scale-400);
+}
+
+#category .category_content ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+#category .category_content ul li.active {
+  color: var(--branding-warning);
+}
+
+#category .category_content ul li {
+  color: #CCCCCC;
+}
+
+#category .add_to_cart {
+  border-radius: 40px;
+  padding: 13px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--branding-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}

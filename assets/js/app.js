@@ -33,6 +33,11 @@ $(function () {
     });
 
 
+    // filter
+    	$(".category-button").categoryFilter();
+
+
+
 
 
 });

@@ -101,10 +101,18 @@
 
   /* nav_header END */
 
-  #hero .hero_content{
+  #hero .hero_content {
     text-align: center;
   }
+
   #hero .hero_content h3 {
     font-size: 46px;
   }
+
+  #category .filter {
+    width: 100%;
+  }
+    #category .btns {
+      gap: 15px;
+    }
 }
